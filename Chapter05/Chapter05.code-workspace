@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "./MappingObjects"
+		},
+		{
+			"path": "FluentValidation"
 		}
 	],
 	"settings": {}
