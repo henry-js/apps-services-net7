@@ -7,12 +7,13 @@ namespace MappingObjects.Mappers;
 
 public static class CartToSummaryMapper
 {
-    public static Mapper GetMapper()
+    public static TypeAdapterConfig GetMapsterConfiguration()
     {
-        var config = TypeAdapterConfig<(Cart cart, Customer customer), Summary>.NewConfig()
-                    .Map(dest => dest.FullName, src => $"{src.customer.FirstName} {src.customer.LastName}")
-                    .Map(dest => dest.Total, src => src.cart.Items.Sum(x => x.Quantity * x.UnitPrice));
-
-        return new Mapper(config);
+        TypeAdapterConfig.GlobalSettings.RequireExplicitMapping = true;
+        var config = new TypeAdapterConfig();
+        config.NewConfig<Cart, Summary>()
+                    .Map(dest => dest.FullName, src => $"{src.Customer.FirstName} {src.Customer.LastName}")
+                    .Map(dest => dest.Total, src => src.Items.Sum(x => x.Quantity * x.UnitPrice));
+        return config;
     }
 }

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MappingObjects.Tests", "MappingObjects.Tests\MappingObjects.Tests.csproj", "{1275A9CD-7644-4053-AC03-73CE74DC5FD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{B2F58568-EEFF-44B9-9803-D37228166061}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{1275A9CD-7644-4053-AC03-73CE74DC5FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1275A9CD-7644-4053-AC03-73CE74DC5FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1275A9CD-7644-4053-AC03-73CE74DC5FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F58568-EEFF-44B9-9803-D37228166061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F58568-EEFF-44B9-9803-D37228166061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F58568-EEFF-44B9-9803-D37228166061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F58568-EEFF-44B9-9803-D37228166061}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
