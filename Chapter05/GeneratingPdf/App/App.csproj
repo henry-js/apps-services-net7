@@ -2,16 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj" />
-    <ProjectReference Include="..\Validators\Validators.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="11.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="images\category1.jpeg" />
-    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <ProjectReference Include="..\Document\Document.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
