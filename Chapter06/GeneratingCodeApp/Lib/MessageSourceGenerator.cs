@@ -1,0 +1,28 @@
+﻿using System;
+using Microsoft.CodeAnalysis;
+
+namespace Packt.Shared;
+[Generator]
+public class MessageSourceGenerator : ISourceGenerator
+{
+    public void Execute(GeneratorExecutionContext execContext)
+    {
+        IMethodSymbol mainMethod = execContext.Compilation.GetEntryPoint(execContext.CancellationToken);
+        string source = $@"
+// source-generated code
+static partial class {mainMethod.ContainingType.Name}
+{{
+    static partial void Message(string message)
+    {{
+        System.Console.WriteLine($""Generator says: '{{message}}'"");
+    }}
+}}
+";
+        string typeName = mainMethod.ContainingType.Name;
+        execContext.AddSource($"{typeName}.Methods.g.cs", source);
+    }
+
+    public void Initialize(GeneratorInitializationContext context)
+    {
+    }
+}

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "./Northwind.Common"
+		},
+		{
+			"path": "Northwind.SingalR.Service.Client.Mvc"
+		}
+	],
+	"settings": {}
+}

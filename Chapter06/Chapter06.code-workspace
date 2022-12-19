@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "./WorkingWithReflection"
+		},
+		{
+			"path": "DynamicallyLoadAndExecute"
+		},
+		{
+			"path": "WorkingWithExpressionTrees"
+		},
+		{
+			"path": "GeneratingCodeApp"
+		}
+	],
+	"settings": {}
+}
